@@ -18,4 +18,72 @@
     <h3>Deshabilitado</h3>
     <app-button label="Disabled" [disabled]="true" variant="danger"></app-button>
 
+    <h2>Labels</h2>
+    <app-label label="Label Small" size="small" ></app-label>
+    <app-label label="Label Medium" size="medium"></app-label>
+    <app-label label="Label Large" size="large"></app-label>
+    <app-label label="Required Label" [required]="true"></app-label>
+
+    <h2>Íconos</h2>
+    <h3>Hereda color del contenedor (currentColor)</h3>
+        <p style="color: rgb(0, 207, 255); font-size: 18px;">
+            Usuario (debería verse en cian):
+            <app-icon name="user"></app-icon>
+        </p>
+
+    <h3>Color explícito</h3>
+        <p>
+            Email (rojo explícito):
+            <app-icon name="email" color="#ff4b4b"></app-icon>
+        </p>
+
+    <h3>Tamaños</h3>
+    <p>
+        Candado pequeño:
+        <app-icon name="lock" [size]="16"></app-icon>
+    </p>
+    <p>
+        Candado mediano:
+        <app-icon name="lock" [size]="24"></app-icon>
+    </p>
+    <p>
+        Candado grande:
+        <app-icon name="lock" [size]="32"></app-icon>
+    </p>
+
+    <h3>Combinación tamaño + color</h3>
+    <p>
+        <app-icon name="user" [size]="32" color="#00cfff"></app-icon>
+        Perfil
+    </p>
+
+    <h3>Ícono dentro de botón</h3>
+    <button class="demo-btn">
+        <app-icon name="email" [size]="20"></app-icon>
+        Enviar Email
+    </button>
+
+    <h3>Hover que cambia color del contenedor</h3>
+    <p class="test-hover" style="font-size:18px;">
+        Pasa el cursor sobre este texto (el ícono heredará el color)
+        <app-icon name="user"></app-icon>
+    </p>
+
+    <h3>Lista rápida de íconos</h3>
+    <div class="icon-list">
+        <div class="icon-item">
+            <app-icon name="user" [size]="20"></app-icon>
+            <span>user</span>
+        </div>
+        <div class="icon-item">
+            <app-icon name="lock" [size]="20"></app-icon>
+            <span>lock</span>
+        </div>
+        <div class="icon-item">
+            <app-icon name="email" [size]="20"></app-icon>
+            <span>email</span>
+        </div>
+    </div>
+
+    <h2>Form Field</h2>
 </div>
