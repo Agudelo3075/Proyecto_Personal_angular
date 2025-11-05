@@ -8,8 +8,20 @@ import { Component } from '@angular/core';
 })
 export class DesignShowcase {
 
+  email = '';
+  password = '';
+  inputValue: string = '';
+
+  
   handleButtonClick(name: string) {
     alert(`Click en botón: ${name}`);
   }
+
+  handleLogin(data: any) {
+    alert(`Login con: ${JSON.stringify(data)}`);
+  }
   
+  handleForgotPassword() {
+    alert('Olvidaste tu contraseña');
+  }
 }
