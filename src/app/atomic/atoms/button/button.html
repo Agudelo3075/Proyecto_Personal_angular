@@ -1,1 +1,12 @@
-<p>button works!</p>
+<button
+    [attr.type]="type"
+    [disabled]="disabled"
+    [ngClass]="[
+        variant,
+        size,
+        fullWith ? 'full-width' : ''
+    ]"
+    (click)="handleClick()"
+>
+    {{ label }}
+</button>

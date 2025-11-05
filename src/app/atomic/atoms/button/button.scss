@@ -1,0 +1,67 @@
+button {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: auto;
+}
+
+.primary{
+    background-color: var(--color-cyan);
+    border-radius: 8px;
+    font-weight: 600;
+    color: #00141a;
+    border: none;
+    transition: all .25s;
+
+    // pseudo clase para el estado hover
+    &:hover:not(:disabled) {
+    background: var(--color-cyan-dark); //cambia el color de fondo al pasar el cursor
+    box-shadow: 0 0 10px rgba(0,207,255,0.6); //agrega una sombra al boton
+  }
+}
+
+.secondary {
+  background-color: white; // fondo blanco
+  color: blue; // texto azul
+  border-color: blue; // borde azul
+
+  // pseudo clase para el estado hover
+  &:hover:not(:disabled) {
+    background-color: lightblue; // cambia el fondo a azul claro al pasar el cursor
+  }
+}
+
+.danger {
+  background-color: red; // fondo rojo
+  color: white; // texto blanco
+
+  // pseudo clase para el estado hover
+  &:hover:not(:disabled) {
+    background-color: darkred; // cambia el fondo a rojo oscuro al pasar el cursor
+  }
+}
+
+.small {
+  padding: 6px 10px; // tamaño del boton vertical x horizontal
+  font-size: 0.8rem; // tamaño de la fuente
+}
+
+// Tamaño medium
+.medium {
+  padding: 10px 15px; // tamaño del boton vertical x horizontal
+  font-size: 1rem; // tamaño de la fuente
+}
+
+// Tamaño large
+.large {
+  padding: 14px 20px; // tamaño del boton vertical x horizontal
+  font-size: 1.1rem; // tamaño de la fuente
+}
+
+// Boton de ancho completo
+.full-width {
+  width: 100%; // ancho completo del contenedor padre
+  display: block; // se muestra como bloque
+}
