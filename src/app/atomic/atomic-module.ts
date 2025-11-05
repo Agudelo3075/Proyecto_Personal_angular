@@ -7,6 +7,7 @@ import { Label } from './atoms/label/label';
 import { Icon } from './atoms/icon/icon';
 import { InputComponent } from './atoms/input/input';
 import { FormField } from './molecules/form-field/form-field';
+import { LoginCard } from './organisms/login-card/login-card';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { FormField } from './molecules/form-field/form-field';
     Label,
     Icon,
     InputComponent,
-    FormField
+    FormField,
+    LoginCard
   ],
   imports: [
     CommonModule
@@ -29,7 +31,8 @@ import { FormField } from './molecules/form-field/form-field';
     Label,
     Icon,
     InputComponent,
-    FormField
+    FormField,
+    LoginCard
   ]
 })
 export class AtomicModule { }

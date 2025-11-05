@@ -94,4 +94,11 @@
   ></app-form-field>
   <p>Valor: {{ inputValue }}</p>
     
+  <app-login-card
+    (login)="handleLogin($event)"
+    (forgotPassword)="handleForgotPassword()"
+  ></app-login-card>
+
+  <p>Email actual: {{ email }}</p>
+  <p>Password actual: {{ password }}</p>
 </div>

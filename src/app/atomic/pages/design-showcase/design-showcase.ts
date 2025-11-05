@@ -20,8 +20,9 @@ export class DesignShowcase {
   handleLogin(data: any) {
     alert(`Login con: ${JSON.stringify(data)}`);
   }
-  
+
   handleForgotPassword() {
     alert('Olvidaste tu contraseña');
   }
+  
 }
